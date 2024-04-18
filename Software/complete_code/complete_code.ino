@@ -136,7 +136,7 @@ void loop() {
   LoRa.print(",");
   LoRa.print(yaw);
   LoRa.endPacket();
-
+  delay(1000);
 }
 void calculate_IMU_error() {
   // We can call this funtion in the setup section to calculate the accelerometer and gyro data error. From here we will get the error values used in the above equations printed on the Serial Monitor.
